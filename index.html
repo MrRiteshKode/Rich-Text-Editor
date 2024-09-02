@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rich Text Editor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    
+<body>
+    
+    <div class="navbar">
+        <div class="nav-text"><h2>Welcome To My Rich Text Editor</h2></div>
+    </div>
+
+    <div class="main">
+        <div class="buttons">
+            <button class="btn" data-command="undo"><i class="fa-solid fa-undo fa-xl"></i></button>
+            <button class="btn" data-command="redo"><i class="fa-solid fa-redo fa-xl"></i></button>
+            <button class="btn" data-command="bold"><i class="fa-solid fa-b fa-xl"></i></button>
+            <button class="btn" data-command="underline"><i class="fa-solid fa-underline fa-xl"></i></button>
+            <button class="btn" data-command="italic"><i class="fa-solid fa-i fa-xl"></i></button>
+            <button class="btn" data-command="superscript"><i class="fa-solid fa-superscript fa-xl"></i></button>
+            <button class="btn" data-command="subscript"><i class="fa-solid fa-subscript fa-xl"></i></button>
+            <button class="btn" data-command="insertUnorderedList"><i class="fa-solid fa-list-ul fa-xl"></i></button>
+            <button class="btn" data-command="insertOrderedList"><i class="fa-solid fa-list-ol fa-xl"></i></button>
+            <button class="btn" data-command="justifyRight"><i class="fa-solid fa-align-right fa-xl"></i></button>
+            <button class="btn" data-command="justifyLeft"><i class="fa-solid fa-align-left fa-xl"></i></button> 
+            <button class="btn" data-command="justifyCenter"><i class="fa-solid fa-align-center fa-xl"></i></button>
+            <button class="btn" data-command="p"><i class="fa-solid fa-p fa-xl"></i></button>  
+            <!-- quote need to be some development -->
+            <button class="btn" data-command="quote"><i class="fa-solid fa-quote-right fa-xl"></i></button> 
+            <button class="btn" data-command="image"><i class="fa-solid fa-image fa-xl"></i></button> 
+            <button class="btn" data-command="link"><i class="fa-solid fa-link fa-xl"></i></button>  
+     
+        </div>
+        <div id="editor" class="textarea" contenteditable="true">      
+        </div>
+
+        <button class="btn" data-command="src-code"><i class="fa-solid fa-code fa-xl"></i></button>  
+        <p class="src" id="demo"></p>
+    </div>
+
+    <script src="index.js"></script>
+</head>
+</body>
+</html>
